@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件下载界面</title>
+        <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .software-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .software-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .software-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .software-description {
+            margin-bottom: 20px;
+        }
+        .software-rating {
+            color: gold;
+            margin-bottom: 10px;
+        }
+        .download-button {
+            display: inline-block;
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #4cae4c;
+        }
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .software-item {
+                padding: 10px;
+            }
+            .software-title {
+                font-size: 20px;
+            }
+            .download-button {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+    
+    <style>
+        /* 模态窗口的样式 */
+        .modal {
+            display: none; /* 默认不显示 */
+            position: fixed; /* 固定定位 */
+            z-index: 1; /* 确保模态窗口在最上层 */
+            left: 0;
+            top: 0;
+            width: 100%; /* 宽度100% */
+            height: 100%; /* 高度100% */
+            overflow: auto; /* 允许滚动 */
+            background-color: rgba(0,0,0,0.4); /* 黑色背景，透明度0.4 */
+        }
+
+        /* 模态内容的样式 */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15%从顶部和自动居中 */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* 内容宽度为80% */
+        }
+
+        /* 关闭按钮的样式 */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <!-- 软件下载卡片 -->
+        <div class="software-item">
+            <h2 class="software-title">人鱼の歌姫</h2>
+            <p class="software-description">第五集对我胃口٩(๑^o^๑)۶</p>
+
+            <a href="https://share.feijipan.com/s/qsAo6AN1" class="download-button">立即下载</a>
+    </div>    
+
+        <div class="software-item">
+            <h2 class="software-title">Ane Chijo Max Heart</h2>
+            <p class="software-description">花痴姐姐 花痴妹妹</p>
+
+            <a href="https://share.feijipan.com/s/haAr3vWp" class="download-button">立即下载</a> 
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
+     
